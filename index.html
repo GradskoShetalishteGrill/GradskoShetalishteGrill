@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="mk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Менито на СЕНДВИЧАРА</title>
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #121212;
-            color: #fff;
-            font-family: 'Saira Stencil One', cursive;
-            text-align: center;
-            padding: 20px;
-            background-image:
-                radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4T7WTvUtCcRjGf/fNz3J2k1Q2bclA4iSCLdHQ3Bq0EQcHRx8h/GJY0NDQu+ihQjUbdoOS3W05pNDXSJPzXxj7Hq3XyPH9l/zszp+RIB/nivAczrEGlSjuP7GEqikMZ8vPkkxkLfHbgFzjqReABOCvFiUjAcW0huB68TLBdyoHEJ7nAAJyPZTgAl43MrlW1KM1tEZoLZ8O9cCslE7ixlqSJsY3Hzoc8GA4INbbxkHP0pH37rbepcwXHE7X8FDeTthivNdJBPukAKvFVE4SrSQJpcLbA29pAZVpHgIMF2IlYqEqoz1z5DriYg9OMJ4AKMhuJqJ/E8TIogFDMltJ4CKqw5lyfKbcvcFAyN82X3AEGdKYUIF9qprZBi2XDJbV1HvGfZk5QTKLcpVXotUVbnLWbJGZV3ThKaON+vR7NGHbDY68EvhE5XOBNZ5cPAAAAAElFTkSuQmCC');
-            background-size: 30px 30px, 60px;
-            background-repeat: repeat, repeat;
-        }
-        h1 {
-            color: #ffcc00;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 5px #000;
-            font-style: italic;
-            font-size: 36px;
-        }
-        .menu-item {
-            background-color: rgba(30, 30, 30, 0.95);
-            margin: 15px auto;
-            padding: 15px;
-            max-width: 400px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px #000;
-            backdrop-filter: blur(4px);
-        }
-        .menu-item h2 {
-            font-style: italic;
-        }
-        .price {
-            color: #ffcc00;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Менито на СЕНДВИЧАРА</title>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet" />
+<style>
+    body {
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Saira Stencil One', cursive;
+        text-align: center;
+        padding: 20px;
+        background-image:
+            radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdklEQVQ4T7WTvUtCcRjGf/fNz3J2k1Q2bclA4iSCLdHQ3Bq0EQcHRx8h/GJY0NDQu+ihQjUbdoOS3W05pNDXSJPzXxj7Hq3XyPH9l/zszp+RIB/nivAczrEGlSjuP7GEqikMZ8vPkkxkLfHbgFzjqReABOCvFiUjAcW0huB68TLBdyoHEJ7nAAJyPZTgAl43MrlW1KM1tEZoLZ8O9cCslE7ixlqSJsY3Hzoc8GA4INbbxkHP0pH37rbepcwXHE7X8FDeTthivNdJBPukAKvFVE4SrSQJpcLbA29pAZVpHgIMF2IlYqEqoz1z5DriYg9OMJ4AKMhuJqJ/E8TIogFDMltJ4CKqw5lyfKbcvcFAyN82X3AEGdKYUIF9qprZBi2XDJbV1HvGfZk5QTKLcpVXotUVbnLWbJGZV3ThKaON+vR7NGHbDY68EvhE5XOBNZ5cPAAAAAElFTkSuQmCC');
+        background-size: 30px 30px, 60px;
+        background-repeat: repeat, repeat;
+    }
+    h1 {
+        color: #ffcc00;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 5px #000;
+        font-style: italic;
+        font-size: 36px;
+    }
+    .menu-item {
+        background-color: rgba(30, 30, 30, 0.95);
+        margin: 15px auto;
+        padding: 15px;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #000;
+        backdrop-filter: blur(4px);
+        position: relative;
+    }
+    .price {
+        color: #ffcc00;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .qr-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(30, 30, 30, 0.9);
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #000;
+        text-align: center;
+        width: 120px;
+        font-size: 12px;
+        color: #ffcc00;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    .qr-container img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+        border-radius: 8px;
+        border: 2px solid #ffcc00;
+    }
+</style>
 </head>
 <body>
-    <h1>🍔 Мени - СЕНДВИЧАРА</h1>
+<h1>🍔 Мени - СЕНДВИЧАРА</h1>
 
-    <div class="menu-item">
-        <h2>Класичен сендвич</h2>
-        <p>Лепче, шунка, кашкавал, кечап, мајонез</p>
-        <p class="price">120 ден</p>
-    </div>
+<div class="menu-item">
+    <h2>Класичен сендвич</h2>
+    <p>Лепче, шунка, кашкавал, кечап, мајонез</p>
+    <p class="price">120 ден</p>
+</div>
 
-    <div class="menu-item">
-        <h2>Сендвич со пилешко</h2>
-        <p>Лепче, пилешко филе, кашкавал, сос по избор</p>
-        <p class="price">160 ден</p>
-    </div>
+<div class="menu-item">
+    <h2>Сендвич со пилешко</h2>
+    <p>Лепче, пилешко филе, кашкавал, сос по избор</p>
+    <p class="price">160 ден</p>
+</div>
 
-    <div class="menu-item">
-        <h2>Веге сендвич</h2>
-        <p>Лепче, свеж зеленчук, хумус, сос</p>
-        <p class="price">130 ден</p>
-    </div>
+<div class="menu-item">
+    <h2>Веге сендвич</h2>
+    <p>Лепче, свеж зеленчук, хумус, сос</p>
+    <p class="price">130 ден</p>
+</div>
 
-    <div class="menu-item">
-        <h2>Двојно комбо</h2>
-        <p>Два сендвича + пијалок по избор</p>
-        <p class="price">300 ден</p>
-    </div>
+<div class="menu-item">
+    <h2>Двојно комбо</h2>
+    <p>Два сендвича + пијалок по избор</p>
+    <p class="price">300 ден</p>
+</div>
 
-    <p style="margin-top: 50px; font-size: 14px;">Следете нѐ и на Instagram: @sendvichara.mk</p>
+<div class="qr-container">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAAEcAQAAAABp32n5AAABJElEQVR42u3RsQnCMBBAUYvX/y9wTpVoxtp1qHCAy/Y8sQt+CXvIw2N8TuC78d3YPLfX6RAChOMfRhAACE44zxGQAAhDjH0YQAAhDjH8eZqlePyUpyX0rs7HjcEG0pXp+tyLM+CRzHvtN0SpqZdM8JSjHrHFJU6xxSS+r4joV9yWsSvRlIYeqswWpMdSQh9mz5eMiZyfm0d/LTHVZfxU5L3LU+7q6kCrLj+dpH6xCQD0I5j3kC53CkB8XG/fxIAROBv+3c9voPC6C0BHN0zjNfgBvWz1/QLQQ6PkH1rfSx2FHM/TAQE7OQnH0aAACE44zxGQAAhDjH0YQAAhDjH8W04Af4xI8dr1aegcAAAAASUVORK5CYII=" alt="QR код за мени" />
+    Скенирај<br />за менито
+</div>
 </body>
 </html>
